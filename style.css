@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*
+
+
+
+
+*/
+
+:root{
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose00: hsl(332, 68%, 96%);
+    --Rose0: hsl(18, 92%, 91%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--Rose0);
+    display: flex;
+    justify-content: center;
+    color: var(--Brown800);
+}
+
+.container_recipe{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    background-color: var(--White);
+    padding: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2rem;
+    font-family: "Outfit", sans-serif; 
+}
+
+h1,h2{
+    font-family: "Young Serif", system-ui;
+}
+
+.img_recipe img{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.description_recipe{
+    padding: 1rem;
+    background-color: var(--Rose00);
+    border-radius: 1rem;
+    color: var();
+}
+
+.description_recipe b {
+    color: var(--Stone900);
+}
+
+.description_recipe ul li{
+    margin: 1rem;
+    color: var(--Stone600);
+    padding-left: 1.5rem;
+}
+
+.ingredients_recipe{
+    border-bottom: 1px solid var( --Brown800);
+}
+.ingredients_recipe ul li{
+    margin: 1rem;
+    padding-left: 1.5rem;
+}
+
+.instructions_recipe{
+    border-bottom: 1px solid var( --Brown800);
+}
+.instructions_recipe ol li{
+    margin: 1rem 2rem;
+    padding-left: 1.5rem;
+}
+
+.nutrition_recipe p{
+    margin: 1rem 0rem;
+}
+
+.nutrition_recipe table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition_recipe table td{
+    padding: 1rem;
+    border-bottom: 1px solid var(--Brown800);
+}
+
+@media screen and (max-width:700px) {
+
+
+    .container_recipe{
+        padding: 0;
+        background-color:var(--Rose0);
+        margin: 0;
+    }
+    .container_recipe h1,p{
+        margin: 0 1rem;
+    }
+
+    .description_recipe, .ingredients_recipe, .instructions_recipe,.nutrition_recipe{
+        margin: 0 1rem;
+    }
+}
